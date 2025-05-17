@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PISP Acoustic Synthesis Demos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f0f2f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .demo-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #3498db;
+            margin: 0 0 15px 0;
+        }
+
+        .demo-description {
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PISP Acoustic Synthesis Demonstrations</h1>
+        
+        <div class="demo-grid">
+            <div class="demo-card">
+                <video controls>
+                    <source src="videos/pisp_moving_lis.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>360° Listener Rotation</h2>
+                <div class="demo-description">
+                    Demonstrates spatial audio rendering for a listener moving around a fixed sound source. 
+                    Shows dynamic channel balance and environmental reverberation effects.
+                </div>
+            </div>
+
+            <div class="demo-card">
+                <video controls>
+                    <source src="videos/pisp_rotating_src.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2>Rotating Sound Source</h2>
+                <div class="demo-description">
+                    Illustrates binaural audio synthesis for a fixed listener with a 360° rotating source.
+                    Features Doppler effects and HRTF-based spatialization.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Project implementation of "Novel View Acoustic Synthesis with Physically Informed Sounding Particles" (ICCV 2025)</p>
+        </footer>
+    </div>
+</body>
+</html>
