@@ -4,12 +4,11 @@
 Visualizes:
 - Continuous 360° listener motion around stationary source
 - Dynamic left/right channel balance based on angular position
-- Environmental reverberation effects from scene geometry
+- PISP-generated impulse responses for listener-source pair (view direction in all is fixed at 90 degrees)
 
 Demonstrates:
-- Doppler effect during source rotation
-- HRTF-based spatialization for different azimuth angles
-- Energy decay from acoustic occlusion/reflections
+- Doppler effect during listener along axis (distance attenuation)
+- Energy balance on relative positions (elevation is kept fixed on purpose).
 
 
 
